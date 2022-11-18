@@ -1,0 +1,95 @@
+html {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    top: 20vh;
+    background-color: rgb(70, 70, 70);
+    width: 70vw;
+}
+
+#view-highscores {
+    position: fixed;
+    left: 3%;
+    top: 3%;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+#view-highscores:hover {
+    cursor: pointer;
+    color: lightblue;
+}
+
+#timer {
+    position: fixed;
+    right: 3%;
+    top: 3%;
+    font-size: 150%;
+    font-weight: bold;
+    color: lightcoral;
+}
+
+#answer-choice-container {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#header {
+    color: orangered;
+    margin-bottom: 0;
+}
+
+#question {
+    margin-top: 0;
+}
+
+#answer-choice-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-top: 5vh;
+    gap: 20px;
+}
+
+button {
+    flex: 50%;
+    height: 50px;
+    font-size: 125%;
+    font-weight: bold;
+    border: 3px white solid;
+    border-radius: .5rem;
+    transition: all .2s;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+input {
+    font-size: 48px;
+    height: 50px;
+    width: 20%;
+}
+
+p {
+    font-size: 150%;
+    font-weight: bold;
+}
